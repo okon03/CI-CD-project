@@ -11,7 +11,7 @@ The Jenkins pipeline consists of the following stages:
 1. **Git Checkout**
 
    - Retrieves the source code from the GitHub repository.
-   - Repository: [GitHub Repository](https://github.com/okon03/Devops_proj.git)
+   - Repository: [GitHub Repository](https://github.com/okon03/CI-CD-project.git)
 
 2. **Compile**
 
