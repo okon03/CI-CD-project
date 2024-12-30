@@ -59,22 +59,7 @@ The Jenkins pipeline consists of the following stages:
 
 ## Monitoring
 
-Monitoring is handled by Prometheus and Grafana, deployed in the Kubernetes cluster.
-
-### Prometheus
-
-- Collects metrics from the Kubernetes cluster and application pods.
-- Configuration includes scraping endpoints for:
-  - Kubernetes API
-  - Application-specific metrics (if implemented).
-
-### Grafana
-
-- Visualizes metrics collected by Prometheus.
-- Dashboards include:
-  - Pod health and resource usage.
-  - Application performance metrics.
-  - Cluster-wide statistics.
+Prometheus with Blackbox Exporter was used to monitor the availability of the Jenkins instance and the Kubernetes application, with the collected data being sent to Grafana, where metric templates were utilized for visualizing system performance and availability.
 
 ## Tools and Technologies
 
@@ -86,8 +71,8 @@ The pipeline leverages the following tools:
 - **Nexus**: Stores build artifacts.
 - **Docker**: Builds and manages container images.
 - **Kubernetes**: Deploys and manages the application in a containerized environment.
-- **Prometheus & Grafana**: Monitors and visualizes application and cluster metrics.
-- **AWS**: Hosts the Kubernetes cluster on virtual machines.
+- **Prometheus with blackbox Exporter & Grafana**: Monitors and visualizes application and cluster metrics.
+- **AWS**: Hosts virtual machines running SonarQube, Nexus, Jenkins, Prometheus & Grafana, as well as Kubernetes master and worker nodes, with configurations for security groups and appropriate open ports.
 - **Slack**: Sends notifications about pipeline events.
 
 ## Repository Structure
