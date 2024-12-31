@@ -86,6 +86,5 @@ Devops_proj/
 ├── src/                         # Source code of the application
 ├── deployment-service.yaml      # Kubernetes deployment and service configuration
 ├── README.md                    # Documentation
-└── monitoring/                  # Prometheus and Grafana configuration files
-    ├── prometheus.yml
-    └── grafana-dashboard.json
+├──prometheus.yml                # Prometheus configuration file
+├──CI-CD-Project-Schema.png      # Project schema
