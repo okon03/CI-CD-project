@@ -89,3 +89,4 @@ Devops_proj/
 ├── prometheus.yml               # Prometheus configuration file
 ├── CI-CD-Project-Schema.png     # Project schema
 ├── sonar-project.properties     # SonarQube project configuration file
+├── Dockerfile                   # Docker configuration file for building container image
