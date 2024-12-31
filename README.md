@@ -86,5 +86,6 @@ Devops_proj/
 ├── src/                         # Source code of the application
 ├── deployment-service.yaml      # Kubernetes deployment and service configuration
 ├── README.md                    # Documentation
-├──prometheus.yml                # Prometheus configuration file
-├──CI-CD-Project-Schema.png      # Project schema
+├── prometheus.yml               # Prometheus configuration file
+├── CI-CD-Project-Schema.png     # Project schema
+├── sonar-project.properties     # SonarQube project configuration file
